@@ -39,6 +39,7 @@
     \item \(L\) - popyt na pieniądz
     \item \(W\) - płaca nominalna
     \item \(R\) - dochód dla kapitału
+    \item \(PE\) - planowane wydatki\footnote{Oznaczenie z mankiwa}
     \item \(*\) - Operator mówiący, że cos jest światowe
     \item \(\overline{\phantom{a}}\) - Operator mówiący, że coś jest dane z góry
     \item \(E\) - Operator mówiący, że coś jest przeiwdywane.
@@ -52,7 +53,8 @@ Oszcędnosci:
     \frac{\partial Y}{\partial L} = \frac{W}{P}\\
     \frac{\partial Y}{\partial K} = \frac{K}{P}
 \end{gather}
-Z tego oraz równania YCIG oraz dodatkowych równań z treści wyjdzie wszystko.
+Z tego oraz równania YCIG oraz dodatkowych równań z treści wyjdzie wszystko. 
+Należy dodać, że funkcja produkcji zależy od popytu na pracę i kapitał.
 \section{Pieniądz i inflacja}
 Równanie z prędkością obiegu:
 \begin{gather}
@@ -101,4 +103,38 @@ Kurs walutowy:
 \begin{gather}
     \varepsilon = \frac{P}{P^*}
 \end{gather}
+\section{Bezrobocie}
+Niech \(L\) będzie liczbą ludzi, którzy mogą pracować. \(E\) to będzie
+liczba ludzi zatrudnionych oraz \(U\) liczba ludzi bezrobotnych. 
+Stopa bezrtobocia to \(\frac{U}{U+E} = \frac{U}{L}\). Ponadto niech:
+\begin{enumerate}
+    \item \(s\) będzie odsetkiem ludzi zatrudnionych tracących prace w danej jednostce czasu.
+    \item \(f\) będzie odsetkiem ludzi bezrobotnych znajdujących prace w danej jednostce czasu.
+\end{enumerate}
+Dla sytuacji gdzie bezrobocie jest stałe:
+\begin{gather}
+    \frac{U}{L} = \frac{s}{s+f}
+\end{gather}
+\section{model IS-LM}
+Definiujemy sobie kolejną już zmienną pomocniczą, nazywamy to planowane wydatki:
+\begin{gather}
+    PE = C + I + G
+\end{gather}
+W równowadze mamy:
+\begin{gather}
+    Y = PE
+\end{gather}
+\subsection{Krzywa IS}
+Krzywa IS będzie wykresem funkcji \(Y(r)\) lub \(r(Y)\) wziętej z równania:\footnote{tutaj wydatki = dochód}
+\begin{gather}
+    Y = C(Y - T) + I(r) + G
+\end{gather}
+Gdzie oczyiscie jak coś jest z nawiasmai to znaczy, że to funkcja czegoś innego
+którą dostaniemy z góry na kolosie. 
+\subsection{Krzywa LM}
+To samo co tam tylko bierzemy z równania:\footnote{tutaj popyt na pieniądz = podaż pieniądza}    
+\begin{gather}
+    \frac{M}{P} = L(r,Y)
+\end{gather}
+Punkt równowagi w gospodarce jest tam gdzie nasze krzywe się przecinają.
 \end{document}
