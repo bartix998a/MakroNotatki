@@ -29,15 +29,66 @@
     \item \(S\) - Oszczędności narodowe.
     \item \(P\) - Deflator PKB.
     \item \(\varepsilon\) - Realny kurs walutowy.
-    \item \(V\) - Prędkość opbiegu pieniądza
+    \item \(V\) - Prędkość obiegu pieniądza
     \item \(M\) - Zasób pieniądza
+    \item \(M0\) - baza monetarna
+    \item \(M1\) - podaż pieniądza\footnote{zasadniczo to samo co \(M\) tylko tego się użwa przy mnożniku}
+    \item \(r\) - realna stopa procentowa
+    \item \(i\) - nominalna stopa procentowa
+    \item \(\pi\) - inflacja \footnote{Kto wymyślił to oznaczenie!!!}
+    \item \(L\) - popyt na pieniądz
+    \item \(W\) - płaca nominalna
+    \item \(R\) - dochód dla kapitału
     \item \(*\) - Operator mówiący, że cos jest światowe
     \item \(\overline{\phantom{a}}\) - Operator mówiący, że coś jest dane z góry
+    \item \(E\) - Operator mówiący, że coś jest przeiwdywane.
 \end{enumerate}
 Oszcędnosci:
 \begin{gather}
     S = Y - C - G
 \end{gather}
+\section{klasyczna zamknięta gospodarka}
+\begin{gather}
+    \frac{\partial Y}{\partial L} = \frac{W}{P}\\
+    \frac{\partial Y}{\partial K} = \frac{K}{P}
+\end{gather}
+Z tego oraz równania YCIG oraz dodatkowych równań z treści wyjdzie wszystko.
+\section{Pieniądz i inflacja}
+Równanie z prędkością obiegu:
+\begin{gather}
+    MV = PY
+\end{gather}
+Definicja inflacji w okresie \((t-1; t)\):
+\begin{gather}
+    \pi = \frac{P_{t}}{P_{t-1}} - 1
+\end{gather}
+Zależność między realna stopą procentową nominalną a inflacją:
+\begin{gather}
+    1 + r = \frac{1+i}{1+\pi}
+\end{gather}
+Lub w przybliżeniu w którym działąmy:
+\begin{gather}
+    r = i -\pi
+\end{gather}
+Ale że inflacje trzeba zgadywać:\footnote{chyba, szczerze nie mam pojęcia}
+\begin{gather}
+    i = r + E\pi
+\end{gather}
+Definicja popytu na pieniądz:
+\begin{gather}
+    \frac{M}{P} = L
+\end{gather}
+\subsection{podaż pieniądza}
+Mamy agregaty \(M0 = C + R\)\footnote{tutaj \(C\) to jest gotowka w obiegu, \(D\) - suma depozytów w bankach
+prywatnych oraz \(R\) suma rezerw w bankach prywatnych} oraz \(M1 = C + D\). Mnożnik się definiuje tak:
+\begin{gather}
+    m=\frac{M1}{M0} = \frac{C+D}{C + R}
+\end{gather}
+A jak cała gotówka pójdzie do banków to mamy tak:
+\begin{gather}
+    m = \frac{1}{r}
+\end{gather}
+Gdzie to \(r\) to tym razem stopa rezerw które trzymają banki.
 \section{klasyczna gospodarka otwarta}
 Uogolnienie produkcji dla otwartej gospodarki\footnote{dla zamknietej \(NX = 0\)} oraz jakas pierdola z \(NX\):
 \begin{gather}
