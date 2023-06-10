@@ -1,0 +1,47 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage[polish]{babel}
+\usepackage[T1]{fontenc}
+\title{Makro}
+\author{Bartłomiej Parapura}
+\newcommand{\limit}{\lim_{n\to\infty}}
+\newcommand{\nrt}[1]{\sqrt[n]{#1}}
+\newcommand{\we}[1]{\hat{e}_#1}
+\newcommand{\suma}{\sum_{k=0}^n}
+\newcommand{\harr}{\Leftrightarrow}
+\newcommand{\rarr}{\Rightarrow}
+\newcommand{\larr}{\Leftarrow}
+\newcommand{\rcw}{\mathbb{R}}
+\newcommand{\istnieje}[1]{\exists_{#1}\;}
+\newcommand{\s}{\;}
+\newcommand{\lin}[1]{\text{lin}\{#1\}}
+\begin{document}
+\maketitle
+\section{Oznaczenia}
+\begin{enumerate}
+    \item \(Y\) - Funkcja produkcji lub całkowite PKB.
+    \item \(C\) - Konsumpcja. Wydatki na konsumpcje.
+    \item \(G\) - wydatki rządowe bez transferów.
+    \item \(I\) - Oszczędności prywatne.
+    \item \(NX\) - Netto export
+    \item \(S\) - Oszczędności narodowe.
+    \item \(P\) - Deflator PKB.
+    \item \(\varepsilon\) - Realny kurs walutowy.
+    \item \(V\) - Prędkość opbiegu pieniądza
+    \item \(M\) - Zasób pieniądza
+\end{enumerate}
+Oszcędnosci:
+\begin{gather}
+    S = Y - C - G
+\end{gather}
+Uogolnienie produkcji dla otwartej gospodarki\footnote{dla zamknietej \(NX = 0\)} oraz jakas pierdola z \(NX\):
+\begin{gather}
+    Y = C + I + G + NX\\
+    NX = S - I\\
+    NX = \overline{S} - I(r^*)
+\end{gather}
+To 3 jest prawdą bo produkcja podatki i wydatki rządowe są egzogeniczne. 
+Krajowa stopa procentowa zależy od oszczędności.
+\end{document}
